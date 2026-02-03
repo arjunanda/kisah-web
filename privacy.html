@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="antialiased">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Kisah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'cinema-900': '#000000','accent': '#ff2d2d','accent-2': '#d4af37' }, fontFamily: { display: ['"Playfair Display"','serif'], sans: ['Inter','system-ui','sans-serif'] } } } }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cinema-900 text-slate-100 font-sans leading-relaxed">
+  <header class="py-6">
+    <div class="mx-4 lg:mx-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-accent to-accent-2 flex items-center justify-center shadow-lg">
+          <svg viewBox="0 0 24 24" class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v10l3-2 3 2V3"/></svg>
+        </div>
+        <span class="font-display text-lg">Kisah</span>
+      </a>
+      <a href="index.html" class="text-sm text-slate-300 hover:text-accent">Back</a>
+    </div>
+  </header>
+
+  <main class="mx-4 lg:mx-16 py-8 max-w-3xl">
+    <h1 class="text-2xl font-semibold">Privacy Policy</h1>
+    <p class="mt-2 text-slate-400">Last updated: January, 2026</p>
+
+    <article class="mt-6 space-y-6 text-slate-300">
+      <section>
+        <h3 class="font-semibold">Introduction</h3>
+        <p class="mt-1 text-sm">This Privacy Policy describes the types of information that may be collected when you use the Kisah mobile application and how that information is used and protected. The policy is general and intended to be clear and app-store compliant.</p>
+      </section>
+
+      <section>
+        <h3 class="font-semibold">Information We Collect</h3>
+        <p class="mt-1 text-sm">We may collect information you provide directly (e.g., account email, preferences) and technical information automatically (e.g., device identifiers, usage logs, analytics). We do not request or store sensitive personal data beyond what is necessary for app functionality.</p>
+      </section>
+
+      <section>
+        <h3 class="font-semibold">How We Use Information</h3>
+        <p class="mt-1 text-sm">Collected information is used to provide and improve the service, personalize recommendations, support playback, send transactional messages (like account or billing notices), and to analyze app performance. We may use non-identifying aggregate data for product improvement.</p>
+      </section>
+
+      <section>
+        <h3 class="font-semibold">Data Sharing</h3>
+        <p class="mt-1 text-sm">We may share data with service providers who perform functions on our behalf (analytics, hosting, payments). We do not sell personal data to third parties. We may disclose information if required by law or to protect rights and safety.</p>
+      </section>
+
+      <section>
+        <h3 class="font-semibold">Data Security</h3>
+        <p class="mt-1 text-sm">We implement reasonable measures to protect information. No method of transmission or storage is completely secure; we cannot guarantee absolute security but aim to maintain strong practices.</p>
+      </section>
+
+      <section>
+        <h3 class="font-semibold">Children’s Privacy</h3>
+        <p class="mt-1 text-sm">Our app is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware of such data, we will take steps to delete it.</p>
+      </section>
+
+      <section>
+        <h3 class="font-semibold">Changes to This Policy</h3>
+        <p class="mt-1 text-sm">We may update this policy to reflect changes in the app or legal requirements. If material changes are made, we will post an updated policy with a revised date.</p>
+      </section>
+
+      <section>
+        <h3 class="font-semibold">Contact Us</h3>
+        <p class="mt-1 text-sm">For questions about this policy, contact: <a href="mailto:kisah.payment@gmail.com" class="text-accent hover:underline">kisah.payment@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="py-8 border-t border-white/6">
+    <div class="mx-4 lg:mx-16 flex items-center justify-between text-slate-400">
+      <div>© <span id="year"></span> Kisah</div>
+      <a href="index.html" class="text-sm text-slate-300 hover:text-accent">Back to home</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
