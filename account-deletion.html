@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="antialiased">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Account Deletion — Kisah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'cinema-900': '#000000','accent': '#ff2d2d','accent-2': '#d4af37' }, fontFamily: { display: ['Outfit','sans-serif'], sans: ['"Plus Jakarta Sans"','sans-serif'] } } } }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cinema-900 text-slate-100 font-sans leading-relaxed">
+  <header class="py-6">
+    <div class="mx-4 lg:mx-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo_splash.png" alt="Kisah Logo" class="h-10 w-auto object-contain" />
+        <span class="font-display text-lg">Kisah</span>
+      </a>
+      <a href="index.html" class="text-sm text-slate-300 hover:text-accent">Back</a>
+    </div>
+  </header>
+
+  <main class="mx-4 lg:mx-16 py-8 max-w-3xl">
+    <h1 class="text-2xl font-semibold text-white">Account Deletion</h1>
+    <p class="mt-2 text-slate-400">Instructions on how to delete your account and data.</p>
+
+    <article class="mt-8 space-y-8 text-slate-300">
+      
+      <!-- Steps Section -->
+      <section class="bg-white/5 p-6 rounded-xl border border-white/5">
+        <h3 class="text-xl font-semibold text-white mb-4">How to Delete Your Account</h3>
+        <p class="mb-4 text-sm">To delete your account, please follow these steps directly within the Kisah application:</p>
+        <ol class="list-decimal list-inside space-y-3 text-sm ml-1">
+          <li class="pl-2"><span class="font-medium text-white">Login</span> to the Kisah application.</li>
+          <li class="pl-2">Go to the <span class="font-medium text-white">Profile</span> menu.</li>
+          <li class="pl-2">Navigate to <span class="font-medium text-white">Settings</span>.</li>
+          <li class="pl-2">Select <span class="text-accent font-medium">Delete Account / Hapus Akun</span>.</li>
+          <li class="pl-2">Confirm the action on the confirmation screen.</li>
+        </ol>
+      </section>
+
+      <!-- Data Policy Section -->
+      <section>
+        <h3 class="font-semibold text-white mb-2">What Happens When You Delete Your Account?</h3>
+        <p class="text-sm mb-4">When you confirm account deletion, the following actions occur immediately:</p>
+        <ul class="list-disc list-inside space-y-2 text-sm text-slate-400 ml-1">
+          <li><strong>Permanent Removal:</strong> All your account data is permanently deleted from our backend systems.</li>
+          <li><strong>Irreversible:</strong> This action cannot be undone. Deleted data cannot be recovered.</li>
+          <li><strong>Immediate Effect:</strong> There is no waiting period. Deletion happens instantly.</li>
+          <li><strong>No "Soft Delete":</strong> We do not retain archiving or backup of your personal data after deletion.</li>
+        </ul>
+      </section>
+
+      <!-- Post Deletion Section -->
+      <section>
+        <h3 class="font-semibold text-white mb-2">After Deletion</h3>
+        <p class="text-sm text-slate-400">Once the button is pressed and processed:</p>
+        <ul class="list-disc list-inside space-y-2 text-sm text-slate-400 mt-2 ml-1">
+          <li>You will be logged out immediately.</li>
+          <li>Your session will be invalidated.</li>
+          <li>No confirmation email will be sent.</li>
+          <li>You will be redirected to the login or landing page.</li>
+        </ul>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="py-8 border-t border-white/6 mt-12">
+    <div class="mx-4 lg:mx-16 flex items-center justify-between text-slate-400">
+      <div>© <span id="year"></span> Kisah</div>
+      <a href="index.html" class="text-sm text-slate-300 hover:text-accent">Back to home</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
