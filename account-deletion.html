@@ -22,45 +22,75 @@
   </header>
 
   <main class="mx-4 lg:mx-16 py-8 max-w-3xl">
-    <h1 class="text-2xl font-semibold text-white">Account Deletion</h1>
-    <p class="mt-2 text-slate-400">Instructions on how to delete your account and data.</p>
+    <h1 class="text-3xl font-bold text-white mb-2">Account Deletion Request</h1>
+    <h2 class="text-xl text-accent mb-6">For Kisah App Users</h2>
+    
+    <p class="text-slate-300 leading-relaxed mb-8">
+      This page provides instructions on how to request the deletion of your account and associated data for the <strong>Kisah</strong> mobile application. We respect your privacy and provide a simple, in-app mechanism to permanently remove your data.
+    </p>
 
-    <article class="mt-8 space-y-8 text-slate-300">
+    <article class="space-y-8 text-slate-300">
       
       <!-- Steps Section -->
       <section class="bg-white/5 p-6 rounded-xl border border-white/5">
-        <h3 class="text-xl font-semibold text-white mb-4">How to Delete Your Account</h3>
-        <p class="mb-4 text-sm">To delete your account, please follow these steps directly within the Kisah application:</p>
-        <ol class="list-decimal list-inside space-y-3 text-sm ml-1">
-          <li class="pl-2"><span class="font-medium text-white">Login</span> to the Kisah application.</li>
-          <li class="pl-2">Go to the <span class="font-medium text-white">Profile</span> menu.</li>
-          <li class="pl-2">Navigate to <span class="font-medium text-white">Settings</span>.</li>
-          <li class="pl-2">Select <span class="text-accent font-medium">Delete Account / Hapus Akun</span>.</li>
-          <li class="pl-2">Confirm the action on the confirmation screen.</li>
+        <h3 class="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+          <span class="flex items-center justify-center w-6 h-6 rounded-full bg-accent text-black text-xs font-bold">1</span>
+          How to Delete Your Account
+        </h3>
+        <p class="mb-4 text-sm">To delete your <strong>Kisah</strong> account, please follow these steps directly within the application:</p>
+        <ol class="list-decimal list-inside space-y-3 text-sm ml-1 text-white">
+          <li class="pl-2">Open the <span class="font-bold text-accent">Kisah App</span> and Login.</li>
+          <li class="pl-2">Go to the <span class="font-bold">Profile</span> menu (bottom navigation).</li>
+          <li class="pl-2">Tap on the <span class="font-bold">Settings</span> icon (gear icon).</li>
+          <li class="pl-2">Select <span class="text-red-400 font-bold">Delete Account / Hapus Akun</span>.</li>
+          <li class="pl-2">Read the warning and confirm the action by tapping <span class="font-bold text-red-500">Delete Permanently</span>.</li>
         </ol>
       </section>
 
-      <!-- Data Policy Section -->
+      <!-- Data Types Section -->
       <section>
-        <h3 class="font-semibold text-white mb-2">What Happens When You Delete Your Account?</h3>
-        <p class="text-sm mb-4">When you confirm account deletion, the following actions occur immediately:</p>
+        <h3 class="font-semibold text-white text-lg mb-3">Types of Data Deleted</h3>
+        <p class="text-sm mb-4 text-slate-400">By performing the account deletion, the following data types associated with your account will be <strong>permanently removed</strong>:</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white/3 p-4 rounded-lg">
+            <strong class="text-white block mb-1">Personal Information</strong>
+            <span class="text-xs text-slate-400">Name, Email Address, Phone Number, Profile Picture, and Login Credentials.</span>
+          </div>
+          <div class="bg-white/3 p-4 rounded-lg">
+            <strong class="text-white block mb-1">App Activity & History</strong>
+            <span class="text-xs text-slate-400">Watch History, Liked Episodes, Favorites/Watchlist, Search History, and Playback Progress.</span>
+          </div>
+          <div class="bg-white/3 p-4 rounded-lg">
+            <strong class="text-white block mb-1">User Generated Content</strong>
+            <span class="text-xs text-slate-400">Comments, Reviews, and any feedback submitted through the app.</span>
+          </div>
+          <div class="bg-white/3 p-4 rounded-lg">
+            <strong class="text-white block mb-1">Device IDs</strong>
+            <span class="text-xs text-slate-400">Associations between your user ID and device identifiers (FCM tokens, etc.) are severed.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Retention Policy Section -->
+      <section>
+        <h3 class="font-semibold text-white text-lg mb-2">Data Retention Policy</h3>
+        <p class="text-sm text-slate-300 mb-3">
+          <strong>We practice a zero-retention policy for deleted accounts.</strong>
+        </p>
         <ul class="list-disc list-inside space-y-2 text-sm text-slate-400 ml-1">
-          <li><strong>Permanent Removal:</strong> All your account data is permanently deleted from our backend systems.</li>
-          <li><strong>Irreversible:</strong> This action cannot be undone. Deleted data cannot be recovered.</li>
-          <li><strong>Immediate Effect:</strong> There is no waiting period. Deletion happens instantly.</li>
-          <li><strong>No "Soft Delete":</strong> We do not retain archiving or backup of your personal data after deletion.</li>
+          <li>We do <strong>not</strong> implement a "soft delete" or "cooldown period". Once you confirm deletion, your personal data is erased from our active databases immediately.</li>
+          <li>We do <strong>not</strong> retain your data for marketing or analytics purposes after deletion.</li>
+          <li><em>Exceptions:</em> We may retain non-identifiable, anonymized transaction logs strictly for tax and accounting compliance requirements (if you have made purchases), but this data is fully dissociated from your personal identity.</li>
         </ul>
       </section>
 
-      <!-- Post Deletion Section -->
-      <section>
-        <h3 class="font-semibold text-white mb-2">After Deletion</h3>
-        <p class="text-sm text-slate-400">Once the button is pressed and processed:</p>
-        <ul class="list-disc list-inside space-y-2 text-sm text-slate-400 mt-2 ml-1">
-          <li>You will be logged out immediately.</li>
-          <li>Your session will be invalidated.</li>
-          <li>No confirmation email will be sent.</li>
-          <li>You will be redirected to the login or landing page.</li>
+      <!-- Post Deletion Impact -->
+      <section class="border-t border-white/10 pt-6">
+        <h3 class="font-semibold text-white text-lg mb-2">Impact of Deletion</h3>
+        <ul class="list-disc list-inside space-y-2 text-sm text-slate-400">
+          <li>Your access to purchased content (if any) will be revoked permanently.</li>
+          <li>You will be automatically logged out of the application.</li>
+          <li>This action is <strong>irreversible</strong>. You cannot recover your account or data later.</li>
         </ul>
       </section>
 
